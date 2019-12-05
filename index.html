@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <title id="titulo">HORÁRIOS AULA</title>
+    <script type="text/javascript" src="script.js" ></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="cabecalho">
+      <!-- <img id="logo" align src="logo.png" /> -->
+      <h1><span id="tituloHorario">HORÁRIO</span> <span id="tituloAula">AULA</span></h1>
+    </div>
+    <form action="javascript:lerArquivo()" id="form" method="post">
+      <label id="novoHorario">horarios.csv: </label> <input type="file" id="file" accept=".csv" />
+    </form>
+    <div id="infoAtual"></div>
+    <div id="horarios">
+
+    </div>
+    <div id="credito">criado por Gean Guimarães Carneiro</div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    padding-bottom: 10px;
+}
+
+#cabecalho {
+  overflow: auto;
+  margin: 0;
+  padding: 5px;
+  line-height: 70px;
+}
+
+#cabecalho h1{
+  margin: 0;
+  font-size: 30px;
+}
+
+#cabecalho h1 #tituloHorario{
+  color: #29a0da;
+}
+
+#cabecalho h1 #tituloAula{
+  color: #24b14c;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  margin-right: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+#infoAtual {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#credito {
+  margin: 0;
+  padding: 2px;
+
+  font-size: 12px;
+  background: #AAF;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+#horarios table{
+    border-collapse: collapse;
+    margin-bottom: 5px;
+}
+
+#horarios table, th, td{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#horarios th, td{
+    padding: 5px;
+    font-size: 11px;
+}
+
+#horarios th{
+    background-color: gray;
+    color: white;
+}
+
+#horarios tr:nth-child(odd) td{
+    background-color: #e2e2e2;
+}
+
+#horarios .centralizado{
+    text-align: center;
+}
+
+@media only screen and (min-width : 992px) {
+  #credito {
+    right: unset;
+  }
+    #cabecalho h1{
+      font-size: 50px;
+    }
+
+  #horarios th, td{
+    font-size: unset;
+  }
+
+    body {
+        margin-bottom: unset;
+    }
+}
