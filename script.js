@@ -12,8 +12,18 @@ function compilarAula(linha, index, array){
   linha = linha.trim();
   if(linha !== '' && !linha.startsWith('\\')){
     infos = linha.split(';');
+    if(isNumeric(infos[5])
+    	&& (infos[5] > -1 && infos[5] < dias.length)) {
+    		infos[5] = dias[infos[5]]
+    	}
     aulas.push(new Aula(infos[0], infos[1], infos[2], infos[3], infos[4], infos[5]))
   }
+}
+
+function isNumeric(str) {
+  if (typeof str != "string") return false // we only process strings!  
+  return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+         !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
 }
 
 function lerArquivo(e){
